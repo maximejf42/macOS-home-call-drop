@@ -73,8 +73,7 @@ AGENTS+=('com.apple.SafariNotificationAgent') #Notifications in Safari
 #AGENTS+=('com.apple.syncdefaultsd') ##Propably related to syncing keychain
 #AGENTS+=('com.apple.telephonyutilities.callservicesd') #Handling phone and facetime calls
 
-
-if /usr/bin/groups | /usr/bin/grep -w admin
+if id -G $1 | grep -q -w 80
 then
   ADMIN=true
 else
@@ -104,7 +103,7 @@ help_msg(){
   echo ""
   echo "Available commands"
   echo "audit - print current settings"
-  echo "fixmacos - fix your macOS to stop/limit invasions of your privacy"
+  echo "fix - fix your macOS to stop/limit invasions of your privacy"
   echo "restore - restore to default settings"
   echo "help - help message"
 }
@@ -298,7 +297,7 @@ case $1 in
     audit_spotlight
     audit_launchctl
     ;;
-  "fixmacos")
+  "fix")
     check
     start
     ;;
