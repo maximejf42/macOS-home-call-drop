@@ -5,8 +5,15 @@ Script as well disable Spotlight suggestions in system and as well in Safari, it
 
 ## Usage
 MacOS High sierra and up, requires to have sip disabled.
+
+Audit current settings
 <pre>
-bash homecall.sh fixmacos
+bash homecall.sh audit
+</pre>
+
+Fix
+<pre>
+bash homecall.sh fix
 </pre>
 
 Optionally you can restore it back to default by
