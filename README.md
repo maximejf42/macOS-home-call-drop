@@ -28,4 +28,4 @@ If you find something interesting, please open issue and start disccussion. Feel
 Be careful with modifying and using this script if you are not aware about what it exactly does. You can break you system very easily and make it non bootable. Script has been developed with macOS sierra and tested with High Sierra but i believe it will work just fine with previous versions, it just may throw some warnings due fact that some services has been added recently. It can be safely ignored.
 
 ## License
-MIT
+GNU General Public License v3.0
